@@ -1,7 +1,7 @@
-import string
-import random
+import string   # Importing string module
+import random   # Importing random module
 
-def passGen(level="m"):
+def passGen(level="m"): # Define a function with default parameter = "m"
     try:
         s1 = string.punctuation
         s2 = string.digits
@@ -21,6 +21,7 @@ def passGen(level="m"):
         s.extend(s4)
         random.shuffle(s)
 
+# Logics and main program
         if str(level).lower() == level1:
             print("".join(s[0:9]))
         elif str(level).lower() == level2:
@@ -36,6 +37,7 @@ def passGen(level="m"):
         print("Input is incorrect.")
 
 
+# Calling the fucntion inside the function only not from outside 
 if __name__ == "__main__":
     passGen(8)
     passGen("l")
