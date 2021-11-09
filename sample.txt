@@ -1,3 +1,2 @@
 I am a sample file for test purpose
-
-
+This line is edited by github CLI
